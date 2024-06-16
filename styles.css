@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: rgb(250, 245, 241);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.button{
+    background-color: rgb(255, 255, 232);
+    color: black;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 20%;
+    
+}
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #011936;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.dropdowncontent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdowncontent a:hover { background-color: rgb(233, 225, 216);}
+
+.dropdown:hover .dropdowncontent{ display: block;}
+
+.dropdown:hover .button { background-color: rgb(201, 211, 207)}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #011936;
+    margin-top: 2%;
+}
+#icon{
+    color: azure;
+    font-size: 200%;
+}
+h1{
+    font-size: 300%;
+    color: black;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+img {
+    height: 30rem;
+    width: 57rem;
+}
+h2{
+    font-size: 200%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.brands {
+    display: flex;
+    flex-direction: column;
+    margin: 25%;
+    background-color: white;
+}
+video {
+    height: 30rem;
+    width: 60rem;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+p{
+    color: black;
+    font-size: 150%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+@media only screen and (max-width:400px) {
+    img {
+        height: 80%;
+        width: 100%;
+    }
+
+    .brands {
+       width: 80%;
+    }
+    video {
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+    img {
+        height: 65%;
+        width: 65%;
+    }
+
+    .brands {
+        width: 90%;
+     }
+     video {
+        width: 65%;
+        height: 65%;
+     }
+ 
+}
